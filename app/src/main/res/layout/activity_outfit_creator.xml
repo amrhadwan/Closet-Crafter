@@ -1,0 +1,57 @@
+<!-- res/layout/activity_outfit_creator.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".OutfitCreatorActivity">
+
+    <EditText
+        android:id="@+id/outfitNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Outfit Name"
+        android:inputType="textCapWords"
+        android:maxLines="1"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/outfitItemsLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Outfit Items"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/outfitItemsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outfitItemsLabel"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/addItemToOutfitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outfitItemsRecyclerView"
+        android:layout_marginTop="16dp"
+        android:text="Add Item"
+        android:onClick="addItemToOutfit"/>
+
+    <Button
+        android:id="@+id/createOutfitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addItemToOutfitButton"
+        android:layout_marginTop="16dp"
+        android:text="Create Outfit"
+        android:onClick="createOutfit"/>
+    <include layout="@layout/activity_main_with_navigation" />
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<!-- activity_add_item.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/itemImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mylogo"
+    android:scaleType="centerCrop"
+    android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/itemNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemImageView"
+        android:layout_marginTop="16dp"
+        android:hint="Item Name"/>
+
+    <EditText
+        android:id="@+id/itemCategoryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemNameEditText"
+        android:layout_marginTop="8dp"
+        android:hint="Item Category"/>
+
+    <Button
+        android:id="@+id/addItemButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemCategoryEditText"
+        android:layout_marginTop="16dp"
+        android:text="Add Item"/>
+    <Button
+        android:id="@+id/submitItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+    android:layout_centerHorizontal="true"
+    android:text="Submit Item" />
+
+    <include layout="@layout/activity_main_with_navigation" />
+
+</RelativeLayout>

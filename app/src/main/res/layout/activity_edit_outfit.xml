@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".EditOutfitActivity">
+
+    <TextView
+        android:id="@+id/editItemNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        />
+
+    <EditText
+        android:id="@+id/editItemNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editItemNameTextView"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter item name"
+        />
+
+    <TextView
+        android:id="@+id/editItemCategoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Category"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/editItemNameEditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        />
+
+    <EditText
+        android:id="@+id/editItemCategoryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editItemCategoryTextView"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter item category"
+        />
+    <ImageView
+        android:id="@+id/editOutfitImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mylogo" />
+
+    <ImageView
+        android:id="@+id/changeOutfitImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editOutfitImageView"
+        android:src="@drawable/mylogo"
+        android:clickable="true"
+        android:contentDescription="Change Outfit Image"/>
+    <ImageView
+        android:id="@+id/editItemImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/editItemCategoryEditText"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mylogo"
+        android:scaleType="centerCrop"
+        android:contentDescription="Item Image"
+        />
+
+    <Button
+        android:id="@+id/updateItemButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editItemImageView"
+        android:layout_marginTop="16dp"
+        android:text="Update Item"
+        />
+    <include layout="@layout/activity_main_with_navigation" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/outfitImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mylogo"
+        android:contentDescription="@string/outfit_image_description"/>
+
+    <TextView
+        android:id="@+id/outfitNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outfitImageView"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/outfitCategoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outfitNameTextView"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <!-- Add more TextViews for other details like date, description, etc. -->
+
+    <Button
+        android:id="@+id/editOutfitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outfitCategoryTextView"
+        android:layout_marginTop="16dp"
+        android:text="@string/edit_outfit_button_text"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/Lavender"/>
+</RelativeLayout>

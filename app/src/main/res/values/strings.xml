@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SignUp  Login Firebase</string>
+    <string name="item_image">Item image</string>
+    <string name="delete_item">Delete Item</string>
+    <string name="item_category">Item Category</string>
+    <string name="update_item">Update Item</string>
+    <string name="add_outfit">Add Outfit</string>
+    <string name="edit_outfit_button_text">Edit Outfit</string>
+    <string name="outfit_image_description">Outfit Imge</string>
+    <string name="fab_add_outfit_description">Add Outfit</string>
+    <string name="nav_header_image_description">Your Image Description Here</string>
+    <string name="nav_header_title">Your Header Title Here</string>
+    <string name="nav_header_subtitle">Your Header Subtitle Here</string>
+
+</resources>
